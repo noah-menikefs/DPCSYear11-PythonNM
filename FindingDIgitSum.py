@@ -20,10 +20,14 @@ def checkHarshad(n):
 
 	return False
 
-low = 80
-high = 100
-score = 0
-highScore = 0
+def HarshadStreak(low,high):
+
+	low = 0
+	high = 0
+	streak = 0
+	longStreak = 0
+
+	for i in
 
 for i in range(low,high + 1,1):
 	if (checkHarshad(i)):
