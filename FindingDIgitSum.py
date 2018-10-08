@@ -37,3 +37,11 @@ def HarshadStreak(low,high):
 	longStreak = max(streak,longStreak)
 
 	print(longStreak)
+
+f = open("DwiteHarshadNumbersData.txt", "r")
+for line in f:
+	l = f.readline()
+	h = f.readline()
+	findHarshad(l,h)
+
+f.close()

@@ -23,6 +23,19 @@ def cardSum(cardstring):
 			if (temp >= 10):
 				sum = sum + temp % 10
 				temp = temp // 10
+			sum = sum + temp
+		else:
+			sum = sum + cardstring[i]
+
+if (sum % 10 == 0):
+	print ("VALID")
+else:
+	print ("INVALID")			
 		
 
+# f = open("CreditCardData.txt", "r")
+# for line in f:
+# cardstring = f.readline()
+# 	cardSum(cardstring)
 
+# f.close()
