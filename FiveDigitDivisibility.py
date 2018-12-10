@@ -2,10 +2,7 @@
 def genList(D1):
 
 
-	numList = []
-
-	for i in range(1, D1 + 1, 1):
-		numList.append(i)
+	numList = list(range(1,D1+1))
 
 	return numList
 
@@ -52,11 +49,11 @@ def checkDiv(numSwap, D2):
 
 	return ctr
 
-numList = (genList(9))
+numList = (genList(5))
 
 numSwap = swapList(numList)
 
 
-print (checkDiv(numSwap, 24))
+print (checkDiv(numSwap, 12))
 
 
